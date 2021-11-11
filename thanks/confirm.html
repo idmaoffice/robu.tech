@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="../img/opengraph.jpg" />
+    <meta property="og:url" content="https://robu.tech/" />
+    <title>RobuTech</title>
+    <link rel="shortcut icon" href="../favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="top_block confirm_top_block" id="home">
+        <header class="site-header">
+            <div class="wrapper site-header__wrapper">
+                <div class="logo">
+                    <a href="/"><img src="../img/logo.svg" alt="brand"></a>
+                </div>
+                    <nav class="menu">
+                        <ul>
+                            <li><a class="scroll-to" href="/">Главная</a></li>
+                            <li><a class="scroll-to" href="/#advertising">О рекламной сети</a></li>
+                            <li><a class="scroll-to" href="/#advantages">Наши преимущества</a></li>
+                            <li><a class="scroll-to" href="/#cooperation">Сотрудничество</a></li>
+                            <li><a class="scroll-to" href="/#contacts">Контакты</a></li>
+                        </ul>
+                    </nav>
+                <div class="help">
+                    <button id="openConsultationPopUp"><i class="far fa-question-circle"></i>Нужна помощь?</button>
+                </div>
+            </div>
+        </header>
+        
+        <div class="confirm_text">
+            <h2>Спасибо за заявку!</h2>
+            <p>
+                В ближайшее время с Вами свяжутся наши специалисты!
+            </p>
+            <div class="link">
+                <form action="/">
+                    <button href="/" class="forAd">На главную <img src="../img/arrow-circle-right-white.svg" alt="arrow"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+       <!-- Modals -->
+       <div id="consultationPopUp" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="logo"><img src="../img/logo-blue.svg" alt="brand"></div>
+          <h2>Получить консультацию специалиста</h2>
+          <p>Просто оставьте свои контактные данные и мы перезвоним вам в ближайшее время</p>
+          <form>
+            <div class="inputs"> 
+                <div>
+                    <input name="name" id="consultName" type="text">
+                    <label for="consultName">Ваше имя</label>
+                </div>
+                <div>
+                    <input id="consultPhone" name="phone" type="text">
+                    <label for="consultPhone">Ваш номер телефона</label>
+                </div>
+            </div>
+            <div class="consent_block">
+                <input type="checkbox" id="consent" name="scales">
+                <label for="consent">Даю согласие на обработку своих персональных данных, согласно политике конфиденциальности</label>
+            </div>
+            <button class="forAd">Получить консультацию <img src="../img/arrow-circle-right-white.svg" alt="arrow"></button>
+          </form>
+        </div>
+      
+    </div>
+
+    <script src="../js/confirm.js"></script>
+</body>
+</html>
